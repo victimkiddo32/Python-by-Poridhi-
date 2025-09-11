@@ -1,3 +1,4 @@
+#finds the majority element in an array using a dictionary
 def majority_element(nums):
     counts={}
     for i in nums:

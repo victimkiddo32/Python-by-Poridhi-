@@ -23,10 +23,13 @@ def removeNthNodefromEnd(head,n):
     dummy.next=head
     slow=dummy
     fast=dummy
-    
+ 
+#n+1 because we want to stop at the node before the 
+#nth node from the end
     for _ in range(n+1):
         fast=fast.next
-    
+        
+    #we want to keep distance of n between slow and fast  
     while fast:
         slow = slow.next
         fast = fast.next

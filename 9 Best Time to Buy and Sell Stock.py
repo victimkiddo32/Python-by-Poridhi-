@@ -1,7 +1,5 @@
 def maxprofit(prices):
     n=len(prices)
-    if n==0:
-        return 0
     min_price=prices[0]
     maxprofit=0
     for i in range(1,n):

@@ -1,3 +1,4 @@
+# o(n^2) time complexity
 def two_sum(nums,target):
     n=len(nums)
     for i in range(0,n):

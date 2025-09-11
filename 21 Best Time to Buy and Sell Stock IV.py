@@ -11,7 +11,7 @@ def maxprofit(k, prices):
     return dp[k][n-1]
 
 
-# Example usage
+
 prices = list(map(int, input().split()))
 result = maxprofit(4, prices)
 print(result)

@@ -20,6 +20,8 @@ def printlist(head):
 
 # function to delete the middle node of a linked list
 def deleteMidNode(head):
+    if head.next is None:
+            return 
     slow=head
     fast=head
     prev=None
@@ -30,12 +32,10 @@ def deleteMidNode(head):
         fast=fast.next.next
         
     if prev:
-        prev.next=slow.next
-        
+        prev.next=slow.next   
     return head
 
 
-        
 arr=list(map(int,input().split()))
 list=buildlist(arr)
 head=deleteMidNode(list)

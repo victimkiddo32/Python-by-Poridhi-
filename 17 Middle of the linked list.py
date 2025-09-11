@@ -11,7 +11,11 @@ def buildlist(arr):
         tail.next=temp
         tail=temp
     return head
-
+#main code to find the middle and print the linked list
+#slow and fast pointer approach
+#slow pointer moves one step at a time
+#fast pointer moves two steps at a time
+#when fast pointer reaches the end, slow pointer will be at the midddle
 def middleNode(head):
     slow =head
     fast=head

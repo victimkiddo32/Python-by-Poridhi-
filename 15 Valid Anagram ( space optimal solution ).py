@@ -1,12 +1,14 @@
 def valid_anagram(s, t):
-    arr=[0]*26
-    #space complexity O(1) as the size of the arr is fixed 26
+    if len(s) != len(t):
+        return False
+    freq=[0]*26
+    #space complexity O(1) as the size of the freq is fixed 26
     for i in range(len(s)):
-        arr[ord(s[i])-97]+=1
-        arr[ord(t[i])-97]-=1
+        freq[ord(s[i])-97]+=1
+        freq[ord(t[i])-97]-=1
     
     for i in range(26):
-        if arr[i]!=0:
+        if freq[i]!=0:
             return False
     return True
     

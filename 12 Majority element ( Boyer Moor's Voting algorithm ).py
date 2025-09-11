@@ -1,6 +1,6 @@
 def majority_element(nums):
     count =0
-    cnadidate=0;
+    candidate=0
     for i in nums:
         if count==0:
             candidate=i
