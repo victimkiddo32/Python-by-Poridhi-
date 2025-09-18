@@ -2,9 +2,13 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Git Quick Push",
+      "label": "Safe Git Push",
       "type": "shell",
-      "command": "git add .; git commit -m \"update\" ; git push -u origin main",
+      "command": "powershell",
+      "args": [
+        "-Command",
+        "git pull origin main --allow-unrelated-histories --no-ff; if (-not (git diff --cached --quiet)) { Write-Host 'Nothing to commit'; } else { git add .; git commit -m 'update'; git push -u origin main }"
+      ],
       "problemMatcher": []
     }
   ]

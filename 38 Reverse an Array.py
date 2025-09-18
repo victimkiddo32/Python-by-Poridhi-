@@ -16,4 +16,4 @@ def reverse(nums:int):
 nums=list(map(int,input().split()))
 reverse(nums)
 print(nums)
-    
+
