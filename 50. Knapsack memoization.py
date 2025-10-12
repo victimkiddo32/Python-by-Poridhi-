@@ -1,4 +1,5 @@
-# git add . && git commit -m "Your commit message" && git push -u origin main
+#git add . ; git commit -m "memoization approach" ; git push -u origin main
+
 
 #memoization of 0/1 knapsack
 def f(i,capacity,w,v,memo):
