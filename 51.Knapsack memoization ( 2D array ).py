@@ -2,6 +2,9 @@
 
 
 #memoization of 0/1 knapsack
+#TC: o(n*capacity)
+#SC: o(n*capcity) + o(n) for recursion stack
+ 
 def f(i,capacity,w,v,memo):
     if i<0 or capacity==0:
         return 0

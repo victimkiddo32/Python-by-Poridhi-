@@ -1,7 +1,9 @@
 #git add . ; git commit -m "tabulation appraoch" ; git push -u origin main
 
 #tabulation appraoch 0/1 knapsack
-#
+#TC: o(n*capacity)
+#SC: 0(capacity)
+
 def f(n,capacity,weight,value):
     prev=[0]*(capacity+1)
     for c in range(capacity+1):
@@ -21,8 +23,6 @@ def f(n,capacity,weight,value):
     return prev[capacity]
 
      
-
-
 if __name__=="__main__":
     weight=[3,2,5]
     value=[30,40,60]
