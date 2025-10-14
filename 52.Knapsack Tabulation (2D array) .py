@@ -1,4 +1,4 @@
-#git add . ; git commit -m "tabulation appraoch" ; git push -u origin main
+#git add . ; git commit -m "Dp problem" ; git push -u origin main
 
 #tabulation appraoch 0/1 knapsack
 #TC: o(n*capacity)
