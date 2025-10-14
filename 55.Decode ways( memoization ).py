@@ -1,6 +1,8 @@
 #git add . ; git commit -m "Dp problem" ; git push -u origin main
 
 #memoizarion approach
+#TC: O(n)
+#SC: o(n)+o(n) for recursion stack
 def f(s, n,memo):
     if n == 0:
         return 1

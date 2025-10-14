@@ -1,6 +1,9 @@
 #git add . ; git commit -m "Dp problem" ; git push -u origin main
 
 #Tabulation approach
+#TC: O(n)
+#SC: O(n)
+
 def f(s, n):
     if n==0:
         return 1
