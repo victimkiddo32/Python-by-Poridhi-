@@ -6,6 +6,10 @@
 
 # @lc code=start
 from typing import List
+
+#TC : o(n!)
+#SC: o(n^2)
+
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         res=[]
@@ -41,3 +45,4 @@ if __name__=="__main__":
     sol=Solution()
     print(sol.solveNQueens(n))
 
+#output: [['.Q..', '...Q', 'Q...', '..Q.'], ['..Q.', 'Q...', '...Q', '.Q..']]

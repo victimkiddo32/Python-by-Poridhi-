@@ -1,4 +1,8 @@
 #git add . ; git commit -m "Backtracking" ; git push -u origin main
+
+#TC: o(n!)
+#SC: o(n^2)
+
 class Solution:
     def solveNQueens(self,n):
         res=[]
@@ -32,6 +36,9 @@ if __name__=="__main__":
     n=4
     sol=Solution()
     print(sol.solveNQueens(n))
+
+#output: [[2, 4, 1, 3], [3, 1, 4, 2]]
+
 
 
 

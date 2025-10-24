@@ -1,6 +1,8 @@
 
 #TC: o(n!)
-#SC: o(n)
+#SC: o(n) cz of sets used
+#board sc is o(n^2) but we are not using it for isSafe check here
+
 
 class solution:
     def solveNQueens(self,n):
