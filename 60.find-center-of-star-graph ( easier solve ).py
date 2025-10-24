@@ -1,3 +1,6 @@
+#git add . ; git commit -m "Graph" ; git push -u origin main
+
+
 class Solution:
     def findCenter(self, edges):
         edge1 = edges[0]
