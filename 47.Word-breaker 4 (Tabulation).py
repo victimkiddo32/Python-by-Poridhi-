@@ -21,7 +21,6 @@ class Solution(object):
         wordset = set(wordDict)
         n = len(s)
 
-        # next_row[i] corresponds to dp[start+1][i]
         next_row = [False] * (n + 1)
         next_row[n] = True  # base case: empty string
 
@@ -43,7 +42,9 @@ class Solution(object):
 
 
 
-
+#Rolling rows method to save space
+#time: o(n^2)
+#space: o(n)
 
 
 
